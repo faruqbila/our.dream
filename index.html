@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="id" >
+<head>
+    <title>Bila & Faruq</title>
+	<meta charset="UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta property="og:title" content="Bila & Faruq">
+    <meta property="og:description" content="Hello Tamu Undangan! Kamu Di Undang..">
+    <meta name=keywords content="undangan,pernikahan kami, faruq aziz, salsabila firdaus">
+    <meta property="og:url" content="https://ngulemind.site">
+    <meta property="og:image" content="./fileku/kita.webp" >
+    <meta property="og:image:alt" content="Bila & Faruq" >
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+    <meta property="og:type" content="website" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link rel="icon" href="./fileku/kita.webp">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/2.2.43/css/materialdesignicons.min.css">
+	<link rel="stylesheet" href="./assets/mycss.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+<!-- ============== HALAMAN AWAL =============== -->
+<div class="thebegining" style="background-image: url('./assets/images/texture.webp'); background-repeat: repeat;">
+    
+    <div id="over-lay-welcome" >
+            <div class="row justify-content-md-center" style="margin:0 auto;">
+                <div class="col-md-6 col-sm-12 col-md-offset-3">
+                    <img src="./fileku/prokes.webp">
+                    <p>Selamat datang diundangan pernikahan kami.<br>Gunakan browser Chrome atau Safari agar website tampil sempurna. Pilih Menu untuk melihat detail undangan. </p>
+				<br>
+                    <p><strong>KETUK UNTUK MELANJUTKAN</a></strong></p>
+                </div>
+            </div>
+        </div>
+		<table style="width: 100%;margin-top:10px"> 
+      		<tbody>
+            <tr>
+                <th style="position: relative;text-align: center;display:block;margin-top:20px">
+					<img src="./fileku/album%20(3).webp" class="cover-thebegining"/>
+					<br><br><span style="margin-top: 15px; margin-bottom: 15px;">The Wedding of <br>Bila & Faruq<br><br></span>
+				</th>
+			</tr>
+      		</tbody>
+      	</table>
+    <div class="row d-flex justify-content-center text-center">
+    <div class="col-md-4 col-sm-12 col-md-offset-4">
+	<div class="salam">
+		<span style="font-family: 'arial', cursive;font-size: 16px;color: #686868;">Kepada Yth.</span>
+		<br>
+		<span style="font-family: 'arial', cursive;font-weight: bold; font-size: 16px; color: #362515;"><p id="yth"></p></span>
+		<br>
+		<span style="font-family: 'arial', cursive;font-weight: bold;color:#362515;font-size:17px;"><p id="kepada"></p></span>
+		<br>
+        <span style="font-family: 'arial', cursive;font-weight: bold; color:#686868;font-size:16px;">Di Tempat</span><br>
+        <br>
+		<a style="position: absolute;right: 0;left: 0;"><button id="buka-undangan" type="button" class="btn btn-primary">Buka Undangan</button></a>
+	</div>
+	</div>
+    </div>
+</div>	
+
+<div class="dekorasi-all">
+	<!-- GAMBAR DEKORASI TENGAH -->
+	<!-- <img id="" src="https://ngulemind.site/assets/themes/blueroses/img/top_flower.png" class="imgatas">  -->
+
+	<!-- GAMBAR DEKORASI KIRI -->
+	<img src="https://ngulemind.site/assets/themes/blueroses/img/kiri-atas.png" class="imgatas-kiri">
+	<!-- GAMBAR DEKORASI KANAN --> 
+	<!-- <img src="https://ngulemind.site/assets/themes/blueroses/img/kanan-atas.png" class="imgatas-kanan">  -->
+</div>
+
+<div class="dekorasi-sampul">
+	<!-- GAMBAR DEKORASI TENGAH -->
+	<!-- <img id="" src="https://ngulemind.site/assets/themes/blueroses/img/top_flower.png" class="imgatas">  -->
+	
+	<!-- GAMBAR DEKORASI KIRI -->
+	<!-- <img src="https://ngulemind.site/assets/themes/blueroses/img/kiri-atas.png" class="imgatas-kiri"> -->
+	<!-- GAMBAR DEKORASI KANAN --> 
+	<!-- <img src="https://ngulemind.site/assets/themes/blueroses/img/kanan-atas.png" class="imgatas-kanan"> -->
+</div>
+
+<div id="konten" style="z-index: 1;">
+
+    
+	<!-- ============== MUSIK =============== -->
+	<audio loop src="./assets/rapsodiCoverEclat.mp3" id="audio" type="audio/mp3" ></audio>
+	<!-- ============== SAMPUL =============== -->	
+	<div id="sampul-konten" class="konten" >                	
+      	<table style="width: 100%;margin-top:-50px"> <!-- tambahkan margin-top:-XX jika kurang ketas -->
+      		<tbody>
+      		 <tr>
+                <th style="text-align: center;">
+                    <span class="the-wedding">- THE WEDDING OF -</span>
+                </th>
+            </tr>
+
+			<tr>
+      			<th style="text-align: center;margin-bottom:-15px;display: block;">
+                    <span class="nama-mempelai">Bila & Faruq</span>
+                </th>
+			</tr>
+			<tr>
+      			<th style="text-align: center;">
+				  <span class="tanggal-weddingnya" id="tanggal-wedding"></span>
+				  <input id="tgl_wedding" type="hidden" value="2022/11/06">
+                </th>
+      		</tr>
+            
+			<tr>
+                <th style="position: relative;text-align: center;display:block;margin-top:40px">
+					<img src="./fileku/album%20(1).webp" class="cover-foto"/>
+					
+					<!-- image border cover -->
+                    <img src="https://ngulemind.site/assets/themes/blueroses/img/bg-flower.png" class="cover-border" /><br>
+					<!-- image border cover -->
+
+                </th>
+			</tr>
+			<!-- ==============
+						<tr>
+			    <th style="position: relative;text-align: center;display:block;margin-top:40px">
+			       <button type="button" class="btn btn-info"><p id="yth">&nbsp;<p="kepada"></p> </p></button>
+			    </th>
+			</tr>
+			=============== -->
+			      		</tbody>
+      	</table>
+    </div>
+	
+	<!-- ============== MEMPELAI =============== -->
+    <div id="mempelai-konten" class="konten" style="display: none;">   
+		<img src="./assets/images/sw-element-top.webp" class="mempelai-salam-pembuka"/><br>
+        <p class="mempelai-intermezzo" >Assalamu'alaikum Warahmatullahi Wabarakatuh.
+
+Dengan memohon Rahmat dan Ridho Allah SWT, Kami akan menyelenggarakan resepsi pernikahan Putra-Putri kami :</p>
+        <img src="./fileku/girl.webp" class="mempelai-img"/>
+        <h1 class="mempelai-wanita-nama">Salsabila Firdaus</h1>
+        <p class="mempelai-wanita-ortu" style="padding:0 15px 0 15px">Putri keempat dari Bpk Cecep Hidayat dan Ibu Juhaeni</p>
+        <h1 class="dengan">dengan</h1>				
+        <img src="./fileku/boy.webp" class="mempelai-img" />
+        <h1 class="mempelai-pria-nama">Faruq Aziz</h1>
+        <p class="mempelai-pria-ortu" style="padding:0 15px 0 15px">Putra kedua dari Bpk. Ma'mun dan Ibu Tati Atikah</p> 
+        <img src="./assets/images/sw-element-bottom.webp" class="mempelai-salam-pembuka"/>
+    </div>
+ 
+    <!-- ============== QrCode Tamu =============== -->
+    <div id="hadir-konten" class="konten" style="display: none;" >
+    <div class="container">
+		<div class="section-title">
+			<h2>QR Code Tamu</h2>
+		</div>
+		<div class="row">
+		        <p style="padding:20px 20%">Silahkan Scan QR Code Berikut untuk Mengisi Buku Tamu:</p>	
+	            <span id="qrcode">
+		        </span>
+	    </div>
+	 </div>
+    </div>
+	<!-- ============== ACARA =============== -->
+    <div id="acara-konten" style="display: none;" class="konten">
+
+    	<div class="section-title">
+            <h2> Acara </h2>
+	    </div>
+
+	    <div class="acaranya" >
+	        			<table class="tb-acara" style="margin-left:auto;margin-right:auto">
+				<thead>
+					<th colspan="4" class="acara-title">
+						- AKAD NIKAH -
+					</th>
+				</thead>
+				<tbody>
+					<tr>
+						<th class="tb-ic-acara"><i class="mdi mdi-calendar icon-acara" ></th>
+						<th class="tb-ket-acara"> Tanggal</th>
+						<th class="tb-anu-acara">:</th>
+						<th class="tb-isi-acara" id="tanggal-acara2"><input id="tgl_acara2" type="hidden" value="2022/11/06" ></th>
+					</tr>
+
+					<tr>
+						<th class="tb-ic-acara"><i class="mdi mdi-timer icon-acara" ></th>
+						<th class="tb-ket-acara"> Jam</th>
+						<th class="tb-anu-acara">:</th>
+						<th class="tb-isi-acara">09:00 WIB - 10:00 WIB</th>
+					</tr>
+
+					<tr>
+						<th class="tb-ic-acara"><i class="mdi mdi-map-marker icon-acara" ></th>
+						<th class="tb-ket-acara"> Tempat</th>
+						<th class="tb-anu-acara">:</th>
+						<th class="tb-isi-acara">Kediaman Mempelai Wanita<br>Jl. Singaperbangsa RT.14/RW.07, Dusun Kosteng, Desa Sukatani, Sukatani, Cilamaya Wetan, Karawang, Jawa Barat.</th>
+					</tr>
+
+
+				</tbody>
+			</table>		
+            <table class="tb-acara" style="margin-left:auto;margin-right:auto">
+				<thead>
+					<th colspan="4" class="acara-title">
+						- RESEPSI -
+					</th>
+				</thead>
+				<tbody>
+					<tr>
+						<th class="tb-ic-acara"><i class="mdi mdi-calendar icon-acara" ></th>
+						<th class="tb-ket-acara"> Tanggal</th>
+						<th class="tb-anu-acara">:</th>
+						<th class="tb-isi-acara" id="tanggal-acara3"><input id="tgl_acara3" type="hidden" value="2022/11/06" ></th>
+					</tr>
+
+					<tr>
+						<th class="tb-ic-acara"><i class="mdi mdi-timer icon-acara" ></th>
+						<th class="tb-ket-acara"> Jam</th>
+						<th class="tb-anu-acara">:</th>
+						<th class="tb-isi-acara">10:00 WIB - 16:00 WIB</th>
+					</tr>
+
+					<tr>
+						<th class="tb-ic-acara"><i class="mdi mdi-map-marker icon-acara" ></th>
+						<th class="tb-ket-acara"> Tempat</th>
+						<th class="tb-anu-acara">:</th>
+						<th class="tb-isi-acara">Kediaman Mempelai Wanita<br>Jl. Singaperbangsa RT.14/RW.07, Dusun Kosteng, Desa Sukatani, Sukatani, Cilamaya Wetan, Karawang, Jawa Barat.</th>
+					</tr>
+				</tbody>
+			</table>		
+             
+						
+		</div>
+    </div>
+    
+
+	<!-- ============== ALBUM =============== -->
+	<div id="album-konten" style="display: none;">
+		<section class="gallery-section section-padding" id="gallery">
+				<div class="container">
+					<div class="row">
+						<div class="col col-xs-12">
+							<div class="section-title">
+								<h2>Gallery Foto Kami</h2>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col col-xs-10 col-xs-offset-1">
+							<div class="gallery-grids">
+
+							
+								<div class="grid">
+									<a href="./fileku/album%20(1).webp" class="fancybox" data-fancybox-group="gall-1">
+										<img src="./fileku/album%20(1).webp" alt>
+									</a>
+								</div>
+
+							
+								<div class="grid">
+									<a href="./fileku/album%20(2).webp" class="fancybox" data-fancybox-group="gall-1">
+										<img src="./fileku/album%20(2).webp" alt>
+									</a>
+								</div>
+
+							
+								<div class="grid">
+									<a href="./fileku/album%20(3).webp" class="fancybox" data-fancybox-group="gall-1">
+										<img src="./fileku/album%20(3).webp" alt>
+									</a>
+								</div>
+
+							
+								<div class="grid">
+									<a href="./fileku/album%20(4).webp" class="fancybox" data-fancybox-group="gall-1">
+										<img src="./fileku/album%20(4).webp" alt>
+									</a>
+								</div>
+
+							
+								<div class="grid">
+									<a href="./fileku/album%20(5).webp" class="fancybox" data-fancybox-group="gall-1">
+										<img src="./fileku/album%20(5).webp" alt>
+									</a>
+								</div>
+
+							
+								<div class="grid">
+									<a href="./fileku/album%20(6).webp" class="fancybox" data-fancybox-group="gall-1">
+										<img src="./fileku/album%20(6).webp" alt>
+									</a>
+								</div>
+							
+								<div class="grid">
+									<a href="./fileku/album%20(8).webp" class="fancybox" data-fancybox-group="gall-1">
+										<img src="./fileku/album%20(8).webp" alt>
+									</a>
+								</div>
+
+							
+								<div class="grid">
+									<a href="./fileku/album%20(9).webp" class="fancybox" data-fancybox-group="gall-1">
+										<img src="./fileku/album%20(9).webp" alt>
+									</a>
+								</div>
+							
+							</div>
+						</div>
+						
+											</div>
+				</div>
+		</section>
+	</div>
+	
+	<!-- ============== UACAPAN/KOMENTAR =============== -->
+    <div id="ucapan-konten" style="display: none;" class="konten">
+    	
+    	<div class="col-12 ucapan-field">
+            <div class="section-title">
+				<h2>Beri Ucapan</h2>
+			</div>
+	        <div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://faruqbila.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>        
+        </div>
+    </div>
+
+
+    </div>
+
+	<!-- ============== CERITA =============== -->
+    <div id="cerita-konten" style="display: none;" class="konten">
+    	
+		<section class="cerita section-padding" id="cerita">
+			<div class="container">
+				<div class="section-title">
+						<h2> Cerita Kita </h2>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="main-timeline">
+
+								<div class="timeline">
+									<div class="timeline-icon"></div>
+									<div class="timeline-content right">
+										<span class="date">September (2019)</span>
+										<h4 class="title">Pertama Bertemu</h4>
+										<p class="description">
+										Kita pertama kali bertemu satu sama lain dalam satu kampus yang sama. Berawal dari seorang Asdos dengan mahasiswanya. Kemudian, kita berkenalan. Pada saat itu kita tidak terlalu banyak membuka percakapan. Percakapan kita hanya sebatas Asdos dengan mahasiswanya.
+										</p>
+									</div>      
+								</div>
+						
+								<div class="timeline">
+									<div class="timeline-icon"></div>
+									<div class="timeline-content">
+										<span class="date">Februari (2020)</span>
+										<h4 class="title">Pendekatan</h4>
+										<p class="description">
+										Kita  sering komunikasi mulai dari hal seputar perkuliahan, hal-hal receh, dan berlanjut dalam hal serius. Faruq meminta izin untuk datang ke rumah bertemu orangtua ku. Kemudian dari situ kita memutuskan untuk mengenal lebih jauh satu sama lain... :)</p>
+									</div>
+								</div>
+						
+								<div class="timeline">
+									<div class="timeline-icon"></div>
+									<div class="timeline-content right">
+										<span class="date">13 Februari 2022</span>
+										<h4 class="title">Pertemuan Antar Keluarga Besar</h4>
+										<p class="description">Adalah salah satu momen yang sangat tidak disangka, Dia datang bersama orangtuanya menemui orangtuaku dan meminta izin untuk melamarku. Jeda satu minggu dari pertemuan itu kita melangsungkan momen lamaran kita. Dari situ kita bersiap untuk menghadapi semuanya bersama-sama.</p>
+									</div>      
+								</div>
+							
+								<div class="timeline">
+									<div class="timeline-icon"></div>
+									<div class="timeline-content">
+										<span class="date">06 November 2022</span>
+										<h4 class="title">Resepsi</h4>
+										<p class="description">Setelah momen spesial kita akan dimulai. Dari titik ini, momen kebahagiaan kita bersama untuk membangun keluarga kecil. Semoga Allaah SWT. Memberikan keberkahan dalam pernikahan kita.</p>
+									</div>      
+								</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</div>
+	
+	<!-- ============== LOKASI =============== -->
+    <div id="lokasi-konten" style="display: none;" class="konten">
+
+		<div class="section-title">
+			<h2>Denah Lokasi</h2>
+		</div>
+		<div class="col-12 maps">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.239658197938!2d107.55935931476911!3d-6.232104995488743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x56fa11b33c55f022!2zNsKwMTMnNTUuNiJTIDEwN8KwMzMnNDEuNiJF!5e0!3m2!1sid!2sid!4v1665661780746!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>		
+		<br>
+				<a class="btn btn-default btn-info" href="https://goo.gl/maps/kD8dYXamvN4nMuUW7">
+				<span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Dapatkan Arah</a>
+		</div>
+			
+	</div>
+	<!-- ============== HADIAH =============== -->
+    <div id="hadiah-konten" style="display: none;" class="konten">
+		<div class="section-title">
+			<h2>Berikan Hadah</h2>
+		</div>
+		<div class="d-flex justify-content-center text-center">
+            <div class="col-md-4 col-sm-12 col-md-offset-4">
+        		<p class="description">Bagi yang ingin memberikan hadiah untuk pernikahan kami, silahkan transfer ke rekening berikut :</p>	
+        		
+        		<div class="card">
+                <ul class="list-group list-group-flush">
+                     
+                    <li class="list-group-item"><b>BANK MANDIRI</b><br>
+        			<span id="norek2">1730011222354</span> <button class="clipboard" data-clipboard-action="copy" data-clipboard-target="#norek2"><i class="mdi mdi-content-copy"></i></button><br>
+        			An. Faruq Aziz<br>
+					or DanaPay<br><span id="norek">082297117049</span><button class="clipboard" data-clipboard-action="copy" data-clipboard-target="#norek"><i class="mdi mdi-content-copy"></i></button>
+					<div style="display:flex;align-items:center;justify-content:center;">
+                            <img src="./fileku/qr_dana.webp" alt="Qris" class="img-responsive">
+                        </div>
+                                			</li>
+        			                  </ul>
+                  
+                </div>
+                
+            </div>
+        </div>
+	</div>
+	
+	<!-- ============== Live Streaming =============== -->
+    <div id="streaming-konten" class="konten" style="display: none;" >
+    <div class="container">
+		<div class="section-title">
+			<h2>Undangan Printing</h2>
+		</div>
+		<div class="row">
+				<div class="social-share text-center">
+				<h5>Undangan Cetak</h5>
+				<a href="https://drive.google.com/file/d/1IbtIDnhx1W7XVhtotSL4D_QN3yRd35Ic/view?usp=sharing" target="_blank" title="Unduh Undangan"><i class="fa fa-download"></i>
+                    <i class="mdi mdi-cloud-download"></i><p>Unduh Undangan</p>
+                    </a>
+		            <h5>Video Undangan</h5>
+                    <ul>
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/kurbVnHESlY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </ul>
+                </div>
+	        </div>
+	    </div>
+    </div>
+    
+</div>
+
+
+<!-- ============== BOTTOM NAVIGATION =============== -->
+<nav class="mobile-bottom-nav2" id="nav">
+
+	<div class="container-fluid px-0">
+	    <div class="row no-gutters">
+			<div class="col-12" style="display: flex;margin-bottom: 5px;margin-top: 5px;" id="hehe">
+				<div class="mobile-bottom-nav__item mobile-bottom-nav__item--active" id="sampul">
+					<div class="mobile-bottom-nav__item-content">
+						<i class="navbar-icon mdi mdi-home"></i>
+						Sampul
+					</div>		
+				</div>
+
+				<div class="mobile-bottom-nav__item" id="mempelai">
+					<div class="mobile-bottom-nav__item-content" >
+						<i class="navbar-icon mdi mdi-heart"></i>
+						Mempelai
+					</div>		
+				</div>
+
+				<div class="mobile-bottom-nav__item" id="acara">		
+					<div class="mobile-bottom-nav__item-content" >
+						<i class="navbar-icon mdi mdi-calendar-text"></i>
+						Acara
+					</div>
+				</div>
+				<div class="mobile-bottom-nav__item" id="lokasi" 
+				>
+					<div class="mobile-bottom-nav__item-content">
+						<i class="navbar-icon mdi mdi-map-marker"></i>
+						Lokasi
+					</div>		
+				</div>
+				<div class="mobile-bottom-nav__item" id="lain">
+					<div class="mobile-bottom-nav__item-content" >
+						<i class="navbar-icon mdi mdi-more" id="lain"></i>
+						Lain
+					</div>		
+				</div>		
+			</div>
+		</div>	
+	</div>
+</nav>
+
+<nav class="mobile-bottom-nav2" id="nav2" style="display: none;">
+
+	<div class="container-fluid px-0">
+	    <div class="row no-gutters">
+			<div class="col-12" style="display: flex;margin-bottom: 5px;margin-top: 5px; " id="hehe">
+				<div class="mobile-bottom-nav__item mobile-bottom-nav__item--active" id="sampul">
+					<div class="mobile-bottom-nav__item-content icons">
+						<i class="navbar-icon mdi mdi-home"></i>
+						Sampul
+					</div>		
+				</div>
+
+				<div class="mobile-bottom-nav__item" id="mempelai">
+					<div class="mobile-bottom-nav__item-content icons">
+						<i class="navbar-icon mdi mdi-heart"></i>
+						Mempelai
+					</div>		
+				</div>
+
+				<div class="mobile-bottom-nav__item" id="acara">		
+					<div class="mobile-bottom-nav__item-content icons">
+						<i class="navbar-icon mdi mdi-calendar-text"></i>
+						Acara
+					</div>
+				</div>
+				<div class="mobile-bottom-nav__item" id="lokasi" 
+				>
+					<div class="mobile-bottom-nav__item-content icons">
+						<i class="navbar-icon mdi mdi-map-marker"></i>
+						Lokasi
+					</div>		 
+				</div>
+				<div class="mobile-bottom-nav__item" id="ucapan"
+				>
+
+					<div class="mobile-bottom-nav__item-content icons">
+						<i class="navbar-icon mdi mdi-message-bulleted"></i>
+						Ucapan
+					</div>		
+				</div>
+
+		
+			</div>
+		</div>	
+	</div>
+
+	<div class="container-fluid px-0">
+	    <div class="row no-gutters">
+			<div class="col-12" style="display: flex;margin-bottom: 5px;margin-top: 5px;">
+		
+				<div class="mobile-bottom-nav__item" id="album" >
+					<div class="mobile-bottom-nav__item-content icons">
+                        <i class="navbar-icon mdi mdi-image"></i>
+                        Album
+                    </div>      
+				</div>
+
+				<div class="mobile-bottom-nav__item" id="cerita"  >
+					<div class="mobile-bottom-nav__item-content icons">
+						<i class="navbar-icon mdi mdi-chart-bubble" ></i>
+						 Cerita Kita
+					</div>		
+				</div>
+
+				<div class="mobile-bottom-nav__item" id="streaming">
+					<div class="mobile-bottom-nav__item-content icons">
+						<i class="navbar-icon mdi mdi-television"></i>
+						Streaming
+					</div>
+				</div>
+				
+				<div class="mobile-bottom-nav__item" id="hadiah">
+					<div class="mobile-bottom-nav__item-content icons">
+						<i class="navbar-icon mdi mdi-gift"></i>
+						Hadiah
+					</div>
+				</div>
+				
+				<div class="mobile-bottom-nav__item">
+					<div class="mobile-bottom-nav__item-content icons">
+						<i class="navbar-icon mdi mdi-close-circle" style="color:red;" id="tutup"></i>
+						Tutup
+					</div>		
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</nav>
+</body>
+
+<div class="dekorasi-all dekorasi-all-bawah">
+	<!-- GAMBAR DEKORASI TENGAH --> 
+	<!-- <img class="imgbawah" src="https://ngulemind.site/assets/themes/blueroses/img/bottom_flower.png" >  -->
+	<!-- GAMBAR DEKORASI KIRI --> 
+	<img class="imgbawah-kanan" src="https://ngulemind.site/assets/themes/blueroses/img/kanan-bawah.png" > 
+	<!-- GAMBAR DEKORASI KIRI --> 
+	<!-- <img class="imgbawah-kiri" src="https://ngulemind.site/assets/themes/blueroses/img/kiri-bawah.png" >  -->
+</div>
+
+<div class="dekorasi-sampul dekorasi-sampul-bawah">
+	<!-- GAMBAR DEKORASI TENGAH --> 
+	<!-- <img class="imgbawah" src="https://ngulemind.site/assets/themes/blueroses/img/bottom_flower.png" >  -->
+	<!-- GAMBAR DEKORASI KIRI --> 
+	<!-- <img class="imgbawah-kanan" src="https://ngulemind.site/assets/themes/blueroses/img/kanan-bawah.png" >  -->
+	<!-- GAMBAR DEKORASI KIRI --> 
+	<!-- <img class="imgbawah-kiri" src="https://ngulemind.site/assets/themes/blueroses/img/kiri-bawah.png" > -->
+</div>
+<!-- mengirimkan data php ke javascript -->
+<script>var base_url = 'https://ngulemind.site';</script>
+
+<!-- JS AREA -->
+<script src="./assets/moment-with-locales.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="./assets/jquery.classyqr.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+<script>
+addEventListener("click",(function(){var e=document.documentElement;(e.requestFullScreen||e.webkitRequestFullScreen||e.mozRequestFullScreen).call(e)})),$(document).ready((function(){$("#over-lay-welcome").click((function(){$("#over-lay-welcome").fadeOut(650),$("#player").get(0).play()}));$("#qrcode").ClassyQR({create:!0,type:"text",text:"Tidak Ada Qrcode"})}));var i=2;for(let e=1;e<=i+1;e++){moment.locale("id");var tgl=$("#tgl_acara"+e).val();$("#tanggal-acara"+e).html(moment(tgl).format("dddd, Do MMMM YYYY")),moment.locale("id");var tgl_wedding=$("#tgl_wedding").val();$("#tanggal-wedding").html(moment(tgl_wedding).format("DD / MM / YYYY"))}var Clipboard=new ClipboardJS(".clipboard");
+</script>
+<script src="./assets/jquery-plugin-collection.min.js"></script>
+<script src="./assets/jsna.js"></script>
+<script>
+function GetURLParameter(sParam)
+{
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++) 
+    {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam) 
+        {
+            return sParameterName[1];
+        }
+    }
+}
+var ke = GetURLParameter('kepada');
+var yth = GetURLParameter('yth');
+document.getElementById("yth").innerHTML = decodeURIComponent(yth);
+document.getElementById("kepada").innerHTML = decodeURIComponent(ke);
+</script>
+</html>
