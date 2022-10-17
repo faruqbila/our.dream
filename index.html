@@ -55,7 +55,7 @@
 		<span style="font-family: 'arial', cursive;font-size: 16px;color: #686868;">Kepada Yth.</span><br>
 		<span style="font-family: 'arial', cursive;font-size: 16px;color: #686868;">Bapak/Ibu/Soudara/i</span>
 		<br>
-		<span style="font-family: 'Dancing Script', cursive;font-weight: bold;color:#362515;font-size:30px;">Tamu Undangan</span><br>
+		<span style="font-family: 'Dancing Script', cursive;font-weight: bold;color:#362515;font-size:30px;"><div id="ke"></div></span><br>
         <span style="font-family: 'Dancing Script', cursive;font-weight: bold;color:#362515;font-size:20px;">Di Tempat</span><br>
         <br>
 		<a style="position: absolute;right: 0;left: 0;"><button id="buka-undangan" type="button" class="btn btn-primary">Buka Undangan</button></a>
@@ -625,6 +625,7 @@ Dengan memohon Rahmat dan Ridho Allah SWT, Kami akan menyelenggarakan resepsi pe
 </div>
 <!-- mengirimkan data php ke javascript -->
 <script>var base_url = 'https://ngulemind.site';</script>
+
 <!-- JS AREA -->
 <script src="./assets/moment-with-locales.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -635,4 +636,21 @@ addEventListener("click",(function(){var e=document.documentElement;(e.requestFu
 </script>
 <script src="./assets/jquery-plugin-collection.min.js"></script>
 <script src="./assets/jsna.js"></script>
+<script>
+function GetURLParameter(sParam)
+{
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++) 
+    {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam) 
+        {
+            return sParameterName[1];
+        }
+    }
+}
+var ke = GetURLParameter('ke');
+document.getElementById("ke").innerHTML = ke;
+</script>
 </html>
