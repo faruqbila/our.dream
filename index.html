@@ -53,9 +53,10 @@
     <div class="col-md-4 col-sm-12 col-md-offset-4">
 	<div class="salam">
 		<span style="font-family: 'arial', cursive;font-size: 16px;color: #686868;">Kepada Yth.</span><br>
-		<span style="font-family: 'arial', cursive;font-size: 16px;color: #686868;">Bapak/Ibu/Soudara/i</span>
+		<span style="font-family: 'arial', cursive;font-size: 16px;color: #686868;"><p id="yth"></p></span>
 		<br>
-		<span style="font-family: 'Dancing Script', cursive;font-weight: bold;color:#362515;font-size:17px;"><div id="kepada"></div></span><br>
+		<span style="font-family: 'Dancing Script', cursive;font-weight: bold;color:#362515;font-size:17px;"><p id="kepada"></p></span>
+		<br>
         <span style="font-family: 'Dancing Script', cursive;font-weight: bold;color:#362515;font-size:16px;">Di Tempat</span><br>
         <br>
 		<a style="position: absolute;right: 0;left: 0;"><button id="buka-undangan" type="button" class="btn btn-primary">Buka Undangan</button></a>
@@ -650,6 +651,8 @@ function GetURLParameter(sParam)
     }
 }
 var ke = GetURLParameter('kepada');
+var yth = GetURLParameter('yth');
+document.getElementById("yth").innerHTML = decodeURIComponent(yth);
 document.getElementById("kepada").innerHTML = decodeURIComponent(ke);
 </script>
 </html>
