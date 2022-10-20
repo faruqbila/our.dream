@@ -23,25 +23,6 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/2.2.43/css/materialdesignicons.min.css">
 	<link rel="stylesheet" href="./assets/mycss.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script>
-function GetURLParameter(sParam)
-{
-    var sPageURL = window.location.search.substring(1);
-    var sURLVariables = sPageURL.split('&');
-    for (var i = 0; i < sURLVariables.length; i++) 
-    {
-        var sParameterName = sURLVariables[i].split('=');
-        if (sParameterName[0] == sParam) 
-        {
-            return sParameterName[1];
-        }
-    }
-}
-var ke = GetURLParameter('kepada');
-var yth = GetURLParameter('yth');
-document.getElementById("yth").innerHTML = decodeURIComponent(yth);
-document.getElementById("kepada").innerHTML = decodeURIComponent(ke);
-</script>
 </head>
 
 <body>
@@ -659,4 +640,7 @@ addEventListener("click",(function(){var e=document.documentElement;(e.requestFu
 </script>
 <script src="./assets/jquery-plugin-collection.min.js"></script>
 <script src="./assets/jsna.js"></script>
+<script>
+function GetURLParameter(e){for(var t=window.location.search.substring(1).split("&"),r=0;r<t.length;r++){var a=t[r].split("=");if(a[0]==e)return a[1]}}var ke=GetURLParameter("kepada"),yth=GetURLParameter("yth");document.getElementById("yth").innerHTML=decodeURIComponent(yth),document.getElementById("kepada").innerHTML=decodeURIComponent(ke);
+</script>
 </html>
