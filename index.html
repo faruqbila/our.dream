@@ -23,6 +23,25 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/2.2.43/css/materialdesignicons.min.css">
 	<link rel="stylesheet" href="./assets/mycss.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+function GetURLParameter(sParam)
+{
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++) 
+    {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam) 
+        {
+            return sParameterName[1];
+        }
+    }
+}
+var ke = GetURLParameter('kepada');
+var yth = GetURLParameter('yth');
+document.getElementById("yth").innerHTML = decodeURIComponent(yth);
+document.getElementById("kepada").innerHTML = decodeURIComponent(ke);
+</script>
 </head>
 
 <body>
@@ -329,8 +348,8 @@ Dengan memohon Rahmat dan Ridho Allah SWT, Kami akan menyelenggarakan resepsi pe
     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
     
     var disqus_config = function () {
-    this.page.url = 'https://faruqbila.netlify.app/';  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = '/index.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    this.page.url = 'https://faruqbila.netlify.app';  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = '/?yth='+yth+'&kepada='+ke; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     this.page.title = "Bila & Faruq";
 	
@@ -640,23 +659,4 @@ addEventListener("click",(function(){var e=document.documentElement;(e.requestFu
 </script>
 <script src="./assets/jquery-plugin-collection.min.js"></script>
 <script src="./assets/jsna.js"></script>
-<script>
-function GetURLParameter(sParam)
-{
-    var sPageURL = window.location.search.substring(1);
-    var sURLVariables = sPageURL.split('&');
-    for (var i = 0; i < sURLVariables.length; i++) 
-    {
-        var sParameterName = sURLVariables[i].split('=');
-        if (sParameterName[0] == sParam) 
-        {
-            return sParameterName[1];
-        }
-    }
-}
-var ke = GetURLParameter('kepada');
-var yth = GetURLParameter('yth');
-document.getElementById("yth").innerHTML = decodeURIComponent(yth);
-document.getElementById("kepada").innerHTML = decodeURIComponent(ke);
-</script>
 </html>
